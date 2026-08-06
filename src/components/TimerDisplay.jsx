@@ -24,25 +24,25 @@ export default function Timer(){
         return () => clearInterval(id);
     }
         ,[isRunning]);
-        
+
     useEffect(() => {
     if (timeleft === 0) {
         setIsRunning(false);
     }
 }, [timeleft]);
     return(
-        <>
-        <p >{getFormattedTime(timeleft)}</p>
-        <button onClick={()=>setIsRunning((isRunning)=> !isRunning)}>
+        <div className='timer-card'>
+        <p className='time'>{getFormattedTime(timeleft)}</p>
+        <button className="start-btn"onClick={()=>setIsRunning((isRunning)=> !isRunning)}>
             {isRunning? "Stop" : "Start"}
         </button>
 
-        <button onClick={()=>{
+        <button className="reset-btn"onClick={()=>{
         setTimeLeft((prev) =>  1500);
         setIsRunning(false);
         }}>
             Reset
         </button>
-        </>
+        </div>
     )
 }
