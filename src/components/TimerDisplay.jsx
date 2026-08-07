@@ -1,4 +1,5 @@
 import { useState,useEffect } from 'react';
+import './TimerDisplay.css';
 export default function Timer(){
 
     const [timeleft,setTimeLeft] = useState(1500);
@@ -32,7 +33,9 @@ export default function Timer(){
 }, [timeleft]);
     return(
         <div className='timer-card'>
+        <h2 className='heading'>Pomodorro</h2>
         <p className='time'>{getFormattedTime(timeleft)}</p>
+        <div className='btn'>
         <button className="start-btn"onClick={()=>setIsRunning((isRunning)=> !isRunning)}>
             {isRunning? "Stop" : "Start"}
         </button>
@@ -43,6 +46,7 @@ export default function Timer(){
         }}>
             Reset
         </button>
+        </div>
         </div>
     )
 }
