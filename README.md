@@ -25,7 +25,7 @@ A simple pomdorro timer bulit to help people stay disciplined and commit to focu
 
 ## Planned 
 - [ ] Progress indicator
-- [ ] Timers for short and long break
+- [x] Timers for short and long break
 - [ ] Pixelated theme
 - [ ] Custom session duration
 - [ ] Sound notifucation when the timer ends
