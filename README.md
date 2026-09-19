@@ -1,5 +1,7 @@
 # Pomodorro Timer
 A simple pomdorro timer bulit to help people stay disciplined and commit to focused work sessions.
+## Live Demo 
+[View Live](https://pomodorro-timer-ecru.vercel.app)
 ## Built with 
 <table>
 <tr>
@@ -24,8 +26,9 @@ A simple pomdorro timer bulit to help people stay disciplined and commit to focu
 - Reset the timer at any point.
 
 ## Planned 
-- [ ] Progress indicator
+- [x] Editable Timer
 - [x] Timers for short and long break
+- [ ] Progress indicator
 - [ ] Pixelated theme
 - [ ] Custom session duration
 - [ ] Sound notifucation when the timer ends
