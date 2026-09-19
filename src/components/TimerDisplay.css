@@ -1,43 +1,43 @@
-.timer-card{
-    width: auto;
+.timer-card {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     align-items: center;
+    gap: 1.5rem;
 }
-.timer-card h2{
+
+.timer-card h2 {
     font-size: 2rem;
 }
 
-.timer-card p{
+.timer-card p {
     font-size: 4rem;
     font-weight: 900;
     color: var(--accent);
 }
 
-.timer-card .main-btns{
+.timer-card .main-btns {
     display: flex;
-    flex-direction: row;
     gap: 1.5rem;
 }
 
-.main-btns button{
+.main-btns button {
     border: 1px solid var(--accent);
-    padding:  0.75rem 1.25rem;
-    border-radius:1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1rem;
     cursor: pointer;
 }
 
-.main-btns .start-btn{
-    color: #ffff;
+.main-btns .start-btn {
+    color: #fff;
     background-color: var(--accent);
 }
 
-.main-btns .reset-btn{
-    background-color: #ffff;
+.main-btns .reset-btn {
+    background-color: #fff;
 }
 
-.main-btns button:hover{
+.main-btns button:hover {
     background-color: var(--accent);
-    color: white;
+    color: #fff;
 }
